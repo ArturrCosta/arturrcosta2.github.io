@@ -1,0 +1,197 @@
+header {
+    background-color: white;
+    height: auto;
+    border-radius: 100px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /*faz trocar de linha se a tela for pequena*/
+}
+
+.ladinho {
+    margin-left: auto; /*ficar na direita*/
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    background: none;
+}
+
+.ladinho a{
+    display: contents;
+    background: none;
+}
+
+.Clique {
+    align-self: flex-start;
+    flex: auto;
+}
+
+body {
+    background-color: #ff914d;
+    font-size: large;
+}
+
+h1 {
+    font-size: 6vw; /*ajustar o tamanho da fonte de acordo com a largura da tela*/
+    text-indent: 30px;
+    margin-left: 6%;
+}
+
+h2 {
+    font-size: 2em; /*fonte escalável*/
+    text-indent: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-indent: 50px;
+    margin-left: 3%;
+}
+
+
+p {
+    text-indent: 40px;
+    margin-left: 8%;
+    margin-right: 4%;
+    text-align: justify;
+}
+
+.animais {
+    text-align: center;
+    background-color: #aae0ff;
+    border: black;
+    border-radius: 100px;
+    margin: 1% 5% 1% 5%;
+}
+
+.animais img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 10px solid #38b6ff;
+    aspect-ratio: 1;
+    max-width: 100%; /*para garantir que as imagens sempre fiquem na tela*/
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    border-radius: 200px;
+    color: #eb762d;
+    font-size: 20px;
+}
+
+strong {
+    color: #ff914d;
+    background-color: white;
+}
+
+strong2 {
+    color: #38b6ff;
+    background-color: white;
+}
+
+strong3 {
+    color: #eb762d;
+    font-weight: bold;
+}
+
+strong4 {
+    color: #ff914d;
+}
+
+strong5 {
+    color: #38b6ff;
+}
+
+footer {
+    background-color: white;
+    height: auto;
+    padding: 8px 0 20px 0;
+}
+
+footer a {
+    margin: 1%;
+    font-weight: bold;
+    font-size: 1em;
+    color: #eb762d;
+}
+
+
+.caixa {
+    display: flex;
+    flex-wrap: wrap; /*permite depois empilhar a esquerda e direita se a tela for pequena*/
+    justify-content: space-between;
+}
+
+.esquerda, .direita {
+    font-size: 24px;
+    background-color: #f1f3b2;
+    border-radius: 60px;
+    margin: 1% 1% 1% 1%;
+    align-items: center;
+    align-self: center;
+    width: 48%;
+}
+
+video {
+    margin-left: 40%;
+}
+
+.tabela{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.animais_comportados{
+    margin-left: 26%;
+}
+
+.animais_comportados img{
+    border: 2px solid blue;
+}
+
+table{
+    background-color: #aae0ff;
+    margin-left: 2%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 20px 20px;
+    border: 2px solid black;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+
+td{
+    text-align: center;
+}
+
+/*  telas pequenas: */
+@media (max-width: 768px) {
+    .esquerda, .direita {
+        width: 100%; /*empilha a direita e esquerda se a tela for pequena*/
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .ladinho {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: 10%;
+    }
+
+    .animais {
+        margin: 1% 3%;
+    }
+}
+

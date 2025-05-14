@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(131, 185, 255);
+}
+
+.topo{
+    background-color: rgb(103, 144, 197);
+}
+
+p{
+    font-size: larger;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    font-size: larger;
+}
+
+a{
+    font-size: large;
+}
